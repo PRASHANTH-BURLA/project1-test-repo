@@ -1,9 +1,27 @@
-# Terraform specific
-.terraform/
-*.tfstate
-*.tfstate.backup
-.terraform.lock.hcl
+# Terraform Core
+**/.terraform/
 
-# OS specific
+# Variables & Secrets (Protects dev.tfvars in /terraform folder)
+**/*.tfvars
+**/*.tfvars.json
+
+# State Files (Protects local testing files)
+**/*.tfstate
+**/*.tfstate.*
+
+# Logs & Junk
+**/*.log
 .DS_Store
 Thumbs.db
+
+
+#--------------------------------
+# Terraform specific
+#.terraform/
+#*.tfstate
+#*.tfstate.backup
+#.terraform.lock.hcl
+
+# OS specific
+#.DS_Store
+#Thumbs.db
