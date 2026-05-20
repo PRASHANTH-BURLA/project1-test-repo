@@ -26,7 +26,7 @@ module "s3_module" {
 
 
 module "cloudfront_module" {
-  source = "./modules/cloudFront"
+  source = "./modules/cloudfront"
   project1_s3_bucket_origin_id = module.s3_module.project1_bucket_id
   # project1_s3_bucket_origin_id = var.bucket_origin_id
   project1_bucket_regional_domain_name = module.s3_module.project1_regional_domain_name

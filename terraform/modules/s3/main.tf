@@ -67,7 +67,10 @@ data "aws_iam_policy_document" "project1_s3_policy" {
     condition {
       test     = "StringEquals"
       variable = "AWS:SourceArn"
-      values   = [aws_cloudfront_distribution.project1_test_distribution.arn] 
+      values   = [var.cloudfront_arn] 
     }
   }
 }
+
+
+# aws_cloudfront_distribution.project1_test_distribution.arn
