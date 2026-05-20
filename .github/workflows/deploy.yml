@@ -34,12 +34,18 @@ jobs:
           cli_config_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Terraform Init
+        env:
+          TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
         run: terraform init
 
       - name: Terraform Plan
+        env:
+          TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
         run: terraform plan -input=false
 
       - name: Terraform Apply
+        env:
+          TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
         run: terraform apply -auto-approve -input=false
 
       - name: S3 Sync
