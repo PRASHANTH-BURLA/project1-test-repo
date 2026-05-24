@@ -1,4 +1,5 @@
 #automation pipline sync Force snapshot
+
 name: "Terraform Deploy"
 
 on:
