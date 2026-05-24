@@ -8,6 +8,7 @@ on:
     paths:
       - 'terraform/**'
       - 'website/**'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch: # The manual emergency button
 
 jobs:
