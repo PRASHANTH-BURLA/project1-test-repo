@@ -25,6 +25,8 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
+          terraform_version: "1.15.3"
+          terraform_wrapper: false
           cli_config_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Terraform Init
