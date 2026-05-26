@@ -4,7 +4,7 @@
 /* ─── Color Tokens: smooth white + blue + black ─── */
 :root {
   /* Light theme */
-  --bg:          #ffffff;          /* pure white canvas */
+  --bg:          #42bf3b;          /* pure white canvas */
   --surface:     #f0f4f9;          /* soft blue-tinted white for sidebar/bars */
   --ink:         #0f1923;          /* rich near-black for text */
   --ink-muted:   #4a5568;          /* mid-tone grey-blue for secondary text */
